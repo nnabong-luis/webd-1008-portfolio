@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+
+/* Global styles */
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.5rem 0;
+  color: #65463e;
+}
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+  color: #65463e;
+}
+
+p {
+  font-family: "Nunito", Sans-serif;
+  font-size: 1.2em;
+  color: #65463e;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #65463e;
+}
+
+header { 
+  box-sizing: border-box;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6rem auto 3rem;
+}
+
+footer {
+  background-color: wheat;
+  display: flex;
+  font-size: small;
+  align-items: center;
+  padding: 0 1rem;
+  margin-top: 5rem;
+}
+/* footer p, footer a {
+  color: white;
+} */
+
+footer > div {
+  margin: 0 auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+  display: block;
+  align-items: center;
+  padding: 4px 16px;
+  color: #65463e;
+}
+
+li a:hover {
+  background: #f9eac2;
+  color: #cbae11;
+  padding: 1rem;
+}
+
+body {
+  font-family: "Nunito", Sans Serif;
+  background: #ffd898;
+}
+
+.margin_x_1 {
+  margin: 0 0.5rem;
+}
+
+.logo {
+  width: 15rem;
+}
+
+.navlist {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 1.2em;
+  font-weight: bold;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  background: wheat;
+  width: 100%;
+  height: 3rem;
+  z-index: 2;
+}
+
+.header_img {
+  width: 3rem;
+}
+
+.container {
+  background: #f9eac2;
+  padding: 1.8em;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+
+.centered {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+/* styles for home */
+.news {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+}
+
+.container h2 {
+  font-size: xx-large;
+}
+
+.news .container {
+  width: 70%;
+  min-height: 23rem;
+  margin: 3rem;
+  box-shadow: 8px 8px 4px 1px rgba(0, 0, 255, .2);
+}
+
+.news .container p {
+  text-align: justify;
+}
+
+.news_tag {
+  z-index: 1;
+  width: 5rem;
+}
+
+header h1 {
+  font-size: 3em;
+  color: #65463e;
+}
+
+header p {
+  font-size: 1rem;
+  color: #65463e;
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  .news {
+    grid-template-columns: 100%;
+  }
+}
+
+/* styles for products page */
+.menu_header {
+  display: flex;
+}
+
+.flipped_img {
+  transform: scaleX(-1);
+}
+
+#products span {
+  width: 100%;
+  padding: 18px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #65463e;
+  background: #d7ab51;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.prod_container {
+  padding: 10px;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 250px 250px;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.prod_container > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.prod_container > div > img {
+  object-fit: cover;
+}
+
+.vidframe_container > .vidframe {
+  display: grid;
+  justify-content: center;
+}
+
+.vidframe > iframe {
+  border: none;
+  overflow: hidden;
+}
+
+.menu {
+  width: 250px;
+  height: 280px;
+}
+
+@media only screen and (max-width: 480px) {
+  .prod_container {
+    grid-template-columns: 200px;
+  }
+
+  .menu {
+    width: 200px;
+  }
+}
+
+/* styles for contact page */
+#contact_us input[type="text"], #contact_us textarea {
+  background-color: #f9eac2;
+  border-radius: 4px;
+  outline: 2px solid black;
+  border: none;
+  padding: 4px
+}
+
+#contact_us input[type="text"]:focus, #contact_us textarea:focus {
+  background-color: whitesmoke;
+  outline: solid 2px #65463e;
+  color: #c79f3e;
+}
+
+.inputBox {
+  width: 30%;
+  margin: 1rem auto;
+  text-align: start;
+  display: grid;
+}
+
+.labelBox {
+  display: flex;
+  align-items: center;
+}
+
+.error_message {
+  color: maroon;
+  font-size: medium;
+  margin: 0 0 0 auto;
+  display: none;
+}
+
+input[type="reset"], input[type="submit"] {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #f9eac2;
+}
+
+input[type="reset"]:active, input[type="submit"]:active {
+  background-color: #c79f3e;
+}
+
+form {
+  text-align: center;
+  padding: 10px;
+}
+
+.submit {
+  background: rgba(101, 70, 62, 0.3);
+}
+
+@media only screen and (max-width: 980px) {
+  .inputBox {
+    width: 80%;
+  }
+}
